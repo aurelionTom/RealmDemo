@@ -14,6 +14,8 @@
 		5213E86C21EF1BC500C90C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5213E86A21EF1BC500C90C11 /* LaunchScreen.storyboard */; };
 		5213E86F21EF1BC500C90C11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5213E86E21EF1BC500C90C11 /* main.m */; };
 		5213E87921EF1BC500C90C11 /* RealmDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5213E87821EF1BC500C90C11 /* RealmDemoUITests.m */; };
+		52C7CDE321EF29A100CF4F9D /* TextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C7CDE221EF29A100CF4F9D /* TextModel.m */; };
+		52C7CDE621EF2AD200CF4F9D /* QH_DataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C7CDE521EF2AD200CF4F9D /* QH_DataBaseManager.m */; };
 		F828D4E85D23C39A00EA0B1E /* Pods_RealmDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4234D4A79B9C08F7DB918DB1 /* Pods_RealmDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,10 @@
 		5213E87421EF1BC500C90C11 /* RealmDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5213E87821EF1BC500C90C11 /* RealmDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmDemoUITests.m; sourceTree = "<group>"; };
 		5213E87A21EF1BC500C90C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C7CDE121EF29A100CF4F9D /* TextModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextModel.h; sourceTree = "<group>"; };
+		52C7CDE221EF29A100CF4F9D /* TextModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextModel.m; sourceTree = "<group>"; };
+		52C7CDE421EF2AD200CF4F9D /* QH_DataBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QH_DataBaseManager.h; sourceTree = "<group>"; };
+		52C7CDE521EF2AD200CF4F9D /* QH_DataBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QH_DataBaseManager.m; sourceTree = "<group>"; };
 		A8E925771F55DECCE045625F /* Pods-RealmDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmDemo/Pods-RealmDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BE38D0E67481AFFB6391FDA7 /* Pods-RealmDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmDemo/Pods-RealmDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +107,7 @@
 				5213E86021EF1BC300C90C11 /* AppDelegate.m */,
 				5213E86221EF1BC300C90C11 /* ViewController.h */,
 				5213E86321EF1BC300C90C11 /* ViewController.m */,
+				5213E88321EF1C9100C90C11 /* Model */,
 				5213E86521EF1BC300C90C11 /* Main.storyboard */,
 				5213E86821EF1BC500C90C11 /* Assets.xcassets */,
 				5213E86A21EF1BC500C90C11 /* LaunchScreen.storyboard */,
@@ -117,6 +124,17 @@
 				5213E87A21EF1BC500C90C11 /* Info.plist */,
 			);
 			path = RealmDemoUITests;
+			sourceTree = "<group>";
+		};
+		5213E88321EF1C9100C90C11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52C7CDE121EF29A100CF4F9D /* TextModel.h */,
+				52C7CDE221EF29A100CF4F9D /* TextModel.m */,
+				52C7CDE421EF2AD200CF4F9D /* QH_DataBaseManager.h */,
+				52C7CDE521EF2AD200CF4F9D /* QH_DataBaseManager.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		65D10AD13D3A79B4518ACF75 /* Frameworks */ = {
@@ -269,6 +287,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5213E86421EF1BC300C90C11 /* ViewController.m in Sources */,
+				52C7CDE321EF29A100CF4F9D /* TextModel.m in Sources */,
+				52C7CDE621EF2AD200CF4F9D /* QH_DataBaseManager.m in Sources */,
 				5213E86F21EF1BC500C90C11 /* main.m in Sources */,
 				5213E86121EF1BC300C90C11 /* AppDelegate.m in Sources */,
 			);
