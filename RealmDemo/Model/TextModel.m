@@ -10,10 +10,10 @@
 
 @implementation TextModel
 
-///设置主键
-+(NSString *)primaryKey{
-    return @"num";
-}
+/////设置主键
+//+(NSString *)primaryKey{
+//    return @"num";
+//}
 
 
 @end

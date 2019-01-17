@@ -13,11 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface QH_DataBaseManager : NSObject
 
-@property (strong, nonatomic) RLMNotificationToken *token;
+@property(nonatomic, strong)RLMNotificationToken *token;
 
 +(instancetype)defaultManager;
 
 -(void)addRLMObject:(RLMObject *)obj;
+
+-(void)InquireDataRLMObject;
+
+-(void)setUp;
 
 @end
 

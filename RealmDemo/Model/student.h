@@ -1,22 +1,23 @@
 //
-//  TextModel.h
+//  student.h
 //  RealmDemo
 //
-//  Created by john on 2019/1/16.
+//  Created by john on 2019/1/17.
 //  Copyright © 2019 sol. All rights reserved.
 //
 
 #import <Realm/Realm.h>
+#import "Dog.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TextModel : RLMObject
-
-@property int num;
+@interface student : RLMObject
 
 @property NSString *name;
+@property int number;
+@property Dog *pet;
 
 @end
 
-RLM_ARRAY_TYPE(TextModel)
+RLM_ARRAY_TYPE(student)
 NS_ASSUME_NONNULL_END

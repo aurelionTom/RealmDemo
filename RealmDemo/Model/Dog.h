@@ -1,8 +1,8 @@
 //
-//  TextModel.h
+//  Dog.h
 //  RealmDemo
 //
-//  Created by john on 2019/1/16.
+//  Created by john on 2019/1/17.
 //  Copyright © 2019 sol. All rights reserved.
 //
 
@@ -10,13 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TextModel : RLMObject
+@interface Dog : RLMObject
 
-@property int num;
-
+///狗名
 @property NSString *name;
 
 @end
 
-RLM_ARRAY_TYPE(TextModel)
+RLM_ARRAY_TYPE(Dog)
 NS_ASSUME_NONNULL_END
