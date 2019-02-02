@@ -45,11 +45,24 @@
     [addDogBtn addTarget:self action:@selector(addDogBtnAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:addDogBtn];
     
+    //删除数据
+    UIButton *deleteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    deleteBtn.backgroundColor = [UIColor greenColor];
+    deleteBtn.frame = CGRectMake(200, 150, 70, 40);
+    [deleteBtn setTitle:@"添加小狗" forState:UIControlStateNormal];
+    [deleteBtn addTarget:self action:@selector(deleteBtnAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:deleteBtn];
+    
+    
     [[QH_DataBaseManager defaultManager] setUp];
     
     // 数组  后边保存的值 要和模型中的属性 保持一致并且顺序也一致  一一对应
 //    TextModel *model1 = [[TextModel alloc]initWithValue:@[@2,@"奥卡姆剃须刀"]];
 
+}
+
+-(void)deleteBtnAction{
+     [[QH_DataBaseManager defaultManager] deleteRLMObject:nil];
 }
 
 -(void)addBtnAction{
