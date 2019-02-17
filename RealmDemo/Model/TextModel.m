@@ -12,7 +12,7 @@
 
 /////设置主键
 //+(NSString *)primaryKey{
-//    return @"num";
+//    return @"name";
 //}
 
 

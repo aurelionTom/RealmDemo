@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TextModel : RLMObject
 
-@property int num;
+@property NSInteger num;
 
 @property NSString *name;
 

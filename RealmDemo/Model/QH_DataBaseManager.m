@@ -81,13 +81,19 @@
 
 ///删除指定数据
 -(void)deleteRLMObject:(RLMObject *)obj{            //删除制定对象
+    TextModel *objeModel = (TextModel *)obj;
+    NSString *deleteStr = [NSString stringWithFormat:@"num = %ld",(long)objeModel.num];
     RLMRealm *realm = [self realmWithConfiguration];
     // 删除的模型一定要求是被realm所管理的  也就是改模型一定是要从realm中取出来的
-    RLMResults *results = [TextModel objectsWhere:@"num = 1"];
+    RLMResults *results = [TextModel objectsWhere:deleteStr];
     TextModel *model = results.firstObject;
+
+//    obj = [TextModel createOrUpdateInRealm:realm withValue:obj];
+    
     [realm transactionWithBlock:^{
         [realm deleteObject:model];
     }];
+    
 }
 
 ///删除所有数据
